@@ -95,7 +95,7 @@ procedure TForm2.FormCreate(Sender: TObject);
 begin
   {$IFDEF MSWINDOWS}
     SetPermissions;
-    WebBrowser1.URL := 'file://' + GetCurrentDir + '/../../src_js/plotter.html';
+    WebBrowser1.URL := 'file://' + GetCurrentDir + '/../../plotter.html';
   {$ENDIF}
  {$IFDEF ANDROID}
     WebBrowser1.URL := 'file://' + TPath.GetDocumentsPath + PathDelim + 'plotter.html';

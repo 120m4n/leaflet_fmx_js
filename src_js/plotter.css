@@ -1,0 +1,10 @@
+.my-icon{    
+ 	background: #006ec9;
+	border: 0px solid #006ec9;
+	color: #008afc;                   
+   width: 1px;
+  height: 1px;
+   border-radius: 50%;             
+  // filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5)); 
+	}
+

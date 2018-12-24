@@ -1,0 +1,1 @@
+dibujar mapas osm en fmx android mediante el componente scriptgate

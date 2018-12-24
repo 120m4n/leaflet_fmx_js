@@ -7,5 +7,28 @@ object Form2: TForm2
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 298.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnedit: TButton
+      Align = Left
+      Size.Width = 153.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'btnedit'
+      OnClick = btneditClick
+    end
+  end
+  object WebBrowser1: TWebBrowser
+    Align = Client
+    Size.Width = 298.000000000000000000
+    Size.Height = 439.000000000000000000
+    Size.PlatformDefault = False
+  end
 end

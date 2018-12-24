@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <script src="src/leaflet.js"></script>
-    <script src="src/leaflet.plotter.js"></script>
-    <link rel="stylesheet" href="src/leaflet.css" />
-    <link rel="stylesheet" href="src/plotter.css" />
+    <script src="leaflet.js"></script>
+    <script src="leaflet.plotter.js"></script>
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" href="plotter.css" />
      <style>
        body { margin:0; padding:0; font-family: arial; }
        #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -15,33 +15,32 @@
     <div id="map"></div>
 
    <script type="text/javascript">
-   var map = L.map('map').setView([51.48516, -0.114], 15.4);
+   var map = L.map('map').setView([7.12702567, -73.119205], 15.4);
    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
-
+	//lat lon
     var plottedPolyline = L.Polyline.Plotter([
-      [51.486033, -0.12115],
-      [51.486407, -0.119734],
-      [51.486781, -0.116687],
-      [51.486942, -0.114927],
-      [51.486888, -0.113769],
-      [51.487102, -0.112824],
-      [51.48753, -0.112009],
-      [51.488331, -0.111279],
-      [51.489373, -0.109606],
-      [51.489828, -0.108404],
-      [51.490389, -0.10673],
-      [51.49095, -0.1054],
-      [51.491164, -0.104284],
-      [51.490977, -0.103726],
-      [51.490469, -0.103812],
-      [51.489347, -0.104542],
-      [51.487636, -0.106688],
-      [51.486033, -0.10819],
-      [51.484884, -0.109434],
-      [51.484296, -0.109992],
-      [51.483013, -0.111408]
+		[7.12702567,-73.119205],
+		[7.127103895,-73.11938019],
+		[7.127077821,-73.11951157],
+		[7.126799694,-73.11966924],
+		[7.126530258,-73.11990574],
+		[7.12625213,-73.120151],
+		[7.126043534,-73.1203437],
+		[7.125852322,-73.1208167],
+		[7.12573064,-73.1212021],
+		[7.126078303,-73.12131597],
+		[7.126382508,-73.12135977],
+		[7.126669328,-73.12145612],
+		[7.127008298,-73.12155247],
+		[7.127242969,-73.12161378],
+		[7.127416799,-73.12166633],
+		[7.127477639,-73.12136852],
+		[7.127538479,-73.12101815],
+		[7.12760801,-73.12078166],
+		[7.127651466,-73.12050136],
+		[7.127747071,-73.12015099]
     ],{
         weight: 3,
      //  plottedPolyline.getLatLngs(),
@@ -59,7 +58,7 @@
 		   if (actual== "read"){
 			return 'Editing';
 		  }else if (actual == "edit"){
-			return 'Read Only';  }
+			return 'ReadOnly';  }
 		  }
 		function getpoints(){
 		var Points = plottedPolyline.getLatLngs();
